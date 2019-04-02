@@ -1,0 +1,67 @@
+@font-face {
+    font-family: '8-bit_pusabregular';
+    src: url('8-bit_pusab-webfont.woff2') format('woff2'),
+         url('8-bit_pusab-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    font-family: '8-bit_pusabregular';
+    background-color: blue;
+}
+
+h2{
+    color: white;
+}
+
+.restart{
+    border: 1px dashed orangered;
+    background-color: inherit;
+    transition: 0.5s;
+}
+.restart:hover{
+ 
+  background-color: indigo;
+    letter-spacing: 2px;
+}
+.modal {
+  transition: 1s;
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 99%;
+  height: 99%; 
+  
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+  transition: 2s;
+  background-color: black;
+  padding: 20px;
+  margin-top: 7%;
+  margin-left: 8%;
+  width: 80%; 
+  text-align: center;
+  color: crimson;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

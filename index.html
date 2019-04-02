@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="res/img/snake.png"/>
+	<link rel="stylesheet" href="res/font/stylesheet.css" type="text/css" charset="utf-8" />
+</head>
+
+<body onload="newGame()">
+	<div id="startScreen" class="modal">
+		<div class="modal-content">
+		<span class="close">&times;</span>
+		<p><h1>Welcome to my Snake Game<br></h1>(No Python used, I swear xD)</p>
+		<p><h4>Developed by Gustavo Alves</h4></p>
+		<p><h5>GitHub Repositorie <a href="https://github.com/DaisukiTamago/snake-game/">https://github.com/DaisukiTamago/snake-game/</a></h5></p>
+		<br>
+		<div class = "restart" onclick="start()"><h3>Start !!!</h3></div>
+		<br>
+		
+	</div>
+	</div>
+	<div id="overScreen" class="modal">
+		<div class="modal-content">
+		<span class="close">&times;</span>
+		<p><h1>You Died x-x</h1></p>
+		<p><h3>Click Restart to Continue</h3></p>
+		<br>
+		<div class = "restart" onclick="start()"><h3>Restart !!!</h3></div>
+	</div>
+	</div>
+	<center>
+		<table><tr>
+			<td><img src="res/img/snake.png" height="50" width="50"></td>
+			<td><h2 id = "title">Snake Game</h2></td>
+			<td><img src="res/img/snake.png" height="50" width="50"></td>
+		</tr></table>
+		<canvas id="canvas" width="1000" height="600" z-index="1"></canvas>
+		<script type="text/javascript" src= "snake.js"></script> 
+	</center>
+		
+</body>
+</html>
